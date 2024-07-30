@@ -1,0 +1,44 @@
+.data-table {
+  @apply border-collapse;
+  width: clamp(50ch, 50vw, 50rem);
+}
+
+.data-table td {
+  @apply bg-white py-1 px-2 border-b-2 border-gray-100 text-lg;
+}
+
+.data-table .transparent td {
+  @apply bg-transparent py-1 px-2 border-b-2 border-gray-100 text-lg;
+}
+
+.data-table .gray-200 td {
+  @apply bg-gray-200 py-1 px-2 border-b-2 border-gray-100 text-lg;
+}
+
+.data-table :is(td, th):nth-child(1){
+  @apply pl-6;
+}
+
+.data-table :is(td, th):nth-last-child(1) {
+  @apply pr-6;
+}
+
+.head-cell {
+  @apply text-gray-500 font-normal text-right py-2 px-0;
+}
+
+.head-cell span {
+  @apply relative cursor-pointer;
+}
+
+.head-cell.sort-active span {
+  @apply pointer-events-none text-gray-900;
+}
+
+.head-cell.sort-active span::after {
+  content: url(../../../../assets/chevron-down.svg);
+  position: absolute;
+  top: -1px;
+  right: -14px;
+  pointer-events: none;
+}

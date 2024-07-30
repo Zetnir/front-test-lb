@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+
+/*noinspection ALL*/
+@layer base {
+
+  :root {
+    --tw-stat-0: #9ca3af;
+    --tw-stat-10: #9f95a0;
+    --tw-stat-20: #a28892;
+    --tw-stat-30: #a57b83;
+    --tw-stat-40: #a86d74;
+    --tw-stat-50: #aa5f66;
+    --tw-stat-60: #ad5257;
+    --tw-stat-70: #b04548;
+    --tw-stat-80: #b33739;
+    --tw-stat-90: #b62a2b;
+    --tw-stat-100: #b91c1c;
+  }
+
+  #root {
+    display: contents;
+  }
+
+  html {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  body {
+    @apply font-sans text-base text-gray-700 bg-gray-100 m-0;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+  }
+}
+
+@tailwind utilities;

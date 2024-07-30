@@ -1,0 +1,8 @@
+.app-name {
+  @apply text-5xl font-bold leading-none text-red-500;
+  letter-spacing: -0.03em;
+}
+
+.app-description {
+  @apply text-base leading-tight text-gray-700 mt-2;
+}

@@ -1,0 +1,4 @@
+.calendar-position {
+  position: absolute;
+  z-index: 1;
+}
